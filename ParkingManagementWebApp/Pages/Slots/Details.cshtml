@@ -1,0 +1,61 @@
+﻿@page
+@model ParkingManagementWebApp.Pages.Slots.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Slot</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Slot.Floor)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Slot.Floor)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Slot.Position)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Slot.Position)
+        </dd>
+        <dt class="col-sm-2" hidden>
+            @Html.DisplayNameFor(model => model.Slot.IsOccupied)
+        </dt>
+        <dd class="col-sm-10" hidden>
+            @Html.DisplayFor(model => model.Slot.IsOccupied)
+        </dd>
+        <dt class="col-sm-2" hidden>
+            @Html.DisplayNameFor(model => model.Slot.IsBook)
+        </dt>
+        <dd class="col-sm-10" hidden>
+            @Html.DisplayFor(model => model.Slot.IsBook)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Slot.IsActive)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Slot.IsActive)
+        </dd>
+    </dl>
+</div>
+<div>
+    @if (@Model.Slot.IsActive == true)
+    {
+        <a asp-page="./Delete" asp-route-id="@Model.Slot.SlotId">Disable</a>
+        <a class="text-black-50">|</a>
+        <a asp-page="./Index" asp-route-id=@Model.Floor>Back to List</a>
+    }
+    @if (@Model.Slot.IsActive == false)
+    {
+        <a asp-page="./Delete" asp-route-id="@Model.Slot.SlotId">Active</a>
+        <a class="text-black-50">|</a>
+        <a asp-page="./Index" asp-route-id=@Model.Floor>Back to List</a>
+    }
+</div>
+<br/>
+

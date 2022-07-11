@@ -1,0 +1,48 @@
+﻿@page
+@model ParkingManagementWebApp.Pages.Pricings.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Pricing</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Pricing.PricingId" />
+            <div class="form-group">
+                <label asp-for="Pricing.DurationType" class="control-label"></label>
+                <input disabled asp-for="Pricing.DurationType" class="form-control" />
+                <input hidden asp-for="Pricing.DurationType" class="form-control" />
+                <span asp-validation-for="Pricing.DurationType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Pricing.Value" class="control-label"></label>
+                <input asp-for="Pricing.Value" class="form-control" />
+                <span asp-validation-for="Pricing.Value" class="text-danger"></span>
+                <p class="text-danger">@Model.ValueError</p>
+            </div>
+            <div class="form-group">
+                <label asp-for="Pricing.VehicleType" class="control-label"></label>
+                <input disabled asp-for="Pricing.VehicleType" class="form-control" />
+                <input hidden asp-for="Pricing.VehicleType" class="form-control" />
+                <span asp-validation-for="Pricing.VehicleType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

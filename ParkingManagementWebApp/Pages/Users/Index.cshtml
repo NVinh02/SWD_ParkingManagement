@@ -1,0 +1,61 @@
+﻿@page
+@model ParkingManagementWebApp.Pages.Users.IndexModel
+
+@{
+    ViewData["Title"] = "Users";
+}
+
+<h1>Users</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.User[0].Ccid)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.User[0].Fullname)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.User[0].Status)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.User[0].IsResident)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.User) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ccid)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fullname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsResident)
+            </td>
+            <td>
+                @if (@item.Status == true)
+                {
+                    <a asp-page="./Delete" asp-route-id="@item.Ccid">Disabled</a>
+                    <a class="text-black-50"></a>
+                    <a asp-page="./Details" asp-route-id="@item.Ccid">Details</a>
+                }
+                @if (@item.Status == false)
+                {
+                    <a asp-page="./Delete" asp-route-id="@item.Ccid">Active</a>
+                    <a class="text-black-50"></a>
+                    <a asp-page="./Details" asp-route-id="@item.Ccid">Details</a>
+                }
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

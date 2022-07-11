@@ -1,0 +1,182 @@
+﻿@page
+@model ParkingManagementWebApp.Pages.ParkingInfos.BookingModel
+
+@{
+    ViewData["Title"] = "Booking";
+}
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript">
+    window.onload = function () {
+        var selectValue = document.getElementById("typeSelect");
+        selectValue.value = 0;
+    };
+
+    function getBookingForm(selectObject) {
+        var selectValue = selectObject.value;
+        //var dateImmediateSelect = document.getElementById("DateImmediatelySelect");
+        var dateAdvanceSelect = document.getElementById("DateAdvanceSelect");
+        var immediateMonthly = document.getElementById("ImmediatelyMonthly");
+        var advanceMonthly = document.getElementById("AdvanceMonthly");
+
+        //var input1 = document.getElementById("inputEndImmediatelyDate");
+        var input2 = document.getElementById("inputImmediatelyMonthly");
+        var input3 = document.getElementById("inputStartAdvanceDate");
+        var input4 = document.getElementById("inputEndAdvanceDate");
+        var input5 = document.getElementById("inputStartAdvanceDateMonthly");
+        var input6 = document.getElementById("inputAdvanceMonthly");
+
+        if (selectValue == 1) {
+            //dateImmediateSelect.style.display = "block";
+            //input1.setAttribute('required', '');
+
+            immediateMonthly.style.display = "none";
+            input2.removeAttribute('required');
+            input2.removeAttribute('min');
+
+            dateAdvanceSelect.style.display = "none";
+            input3.removeAttribute('required');
+            input4.removeAttribute('required');
+
+            advanceMonthly.style.display = "none";
+            input5.removeAttribute('required');
+            input6.removeAttribute('required');
+            input6.removeAttribute('min');
+
+        }
+        else if (selectValue == 2) {
+            //dateImmediateSelect.style.display = "none";
+            //input1.removeAttribute('required');
+
+            immediateMonthly.style.display = "block";
+            input2.setAttribute('required', '');
+            input2.setAttribute('min', '1');
+
+            dateAdvanceSelect.style.display = "none";
+            input3.removeAttribute('required');
+            input4.removeAttribute('required');
+
+            advanceMonthly.style.display = "none";
+            input5.removeAttribute('required');
+            input6.removeAttribute('required');
+            input6.removeAttribute('min');
+        }
+        else if (selectValue == 3) {
+            //dateImmediateSelect.style.display = "none";
+            //input1.removeAttribute('required');
+
+            immediateMonthly.style.display = "none";
+            input2.removeAttribute('required');
+            input2.removeAttribute('min');
+
+            dateAdvanceSelect.style.display = "block";
+            input3.setAttribute('required', '');
+            input4.setAttribute('required', '');
+
+            advanceMonthly.style.display = "none";
+            input5.removeAttribute('required');
+            input6.removeAttribute('required');
+            input6.removeAttribute('min');
+        }
+        else if (selectValue == 4) {
+            //dateImmediateSelect.style.display = "none";
+            //input1.removeAttribute('required');
+
+            immediateMonthly.style.display = "none";
+            input2.removeAttribute('required');
+            input2.removeAttribute('min');
+
+            dateAdvanceSelect.style.display = "none";
+            input3.removeAttribute('required');
+            input4.removeAttribute('required');
+
+            advanceMonthly.style.display = "block";
+            input5.setAttribute('required', '');
+            input6.setAttribute('required', '');
+            input6.setAttribute('min', '1');
+
+        }
+    };
+</script>
+
+<h1>Booking Information</h1>
+
+<span class="text-danger">@TempData["ErrorMessage"]</span>
+@*if (Enumerable.Count(ViewBag.VehicleId) <= 0)*@
+@if(@Model.NumberOfVehicles <= 0)
+{
+    <span class="text-danger">@Model.NumberOfVehicleError</span>
+}
+else
+{
+<form method="post">
+    <div class="form-group">
+        <label asp-for="ParkingVehicleId" class="control-label">Select a your Vehicle:   </label>
+        <select id="vehicleSelect" asp-for="ParkingVehicleId" class="form-control" asp-items="ViewBag.VehicleId" style="width: 300px;"></select>
+    </div>
+
+    <div class="form-group" id="BookingType">
+        <label asp-for="ParkingType" class="control-label">Select a booking type:   </label>
+        <select id="typeSelect" asp-for="ParkingType" class="form-control" onchange="getBookingForm(this)" style="width: 300px;" required>
+            <option value="0" disabled selected hidden>Select your option</option>
+            <option value="1">Book immediately</option>
+            <option value="2">Book immediately, with monthly</option>
+            <option value="3">Book in advance</option>
+            <option value="4">Book in advance, with monthly</option>
+        </select>
+        <span asp-validation-for="ParkingType" class="text-danger"></span>
+    </div>
+
+    <hr />
+
+    @*    <div id="DateImmediatelySelect" style="display: none;">
+            <div class="form-group">
+                <label asp-for="EndImmediatelyDate" class="control-label">End Date</label>
+                <input asp-for="EndImmediatelyDate" class="form-control" id="inputEndImmediatelyDate" style="width: 300px;" />
+            </div>
+        </div>*@
+
+    <div id="ImmediatelyMonthly" style="display: none;">
+        <div class="form-group">
+            <label asp-for="ImmediatelyMonthly" class="control-label">Number of months (1 or higher): </label>
+            <input asp-for="ImmediatelyMonthly" class="form-control" id="inputImmediatelyMonthly" style="width: 300px;" />
+            <span asp-validation-for="ImmediatelyMonthly" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div id="DateAdvanceSelect" style="display: none;">
+        <div class="form-group">
+            <label asp-for="StartAdvanceDate" class="control-label">Start Date</label>
+            <input asp-for="StartAdvanceDate" class="form-control" id="inputStartAdvanceDate" style="width: 300px;" />
+            <span asp-validation-for="StartAdvanceDate" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="EndAdvanceDate" class="control-label">End Date</label>
+            <input asp-for="EndAdvanceDate" class="form-control" id="inputEndAdvanceDate" style="width: 300px;" />
+            <span asp-validation-for="EndAdvanceDate" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div id="AdvanceMonthly" style="display: none;">
+        <div class="form-group">
+            <label asp-for="StartAdvanceDateMonthly" class="control-label">Start Date</label>
+            <input asp-for="StartAdvanceDateMonthly" class="form-control" id="inputStartAdvanceDateMonthly" style="width: 300px;" />
+            <span asp-validation-for="StartAdvanceDateMonthly" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="AdvanceMonthly" class="control-label">Number of months (1 or higher): </label>
+            <input asp-for="AdvanceMonthly" class="form-control" id="inputAdvanceMonthly" style="width: 300px;" />
+            <span asp-validation-for="AdvanceMonthly" class="text-danger"></span>
+        </div>
+    </div>
+
+    <hr />
+
+    <div class="form-group">
+        <input id="btnSubmit" type="submit" value="Find Slot" class="btn btn-primary" />
+    </div>
+</form>
+}
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

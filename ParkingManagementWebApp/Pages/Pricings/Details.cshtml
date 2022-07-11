@@ -1,0 +1,37 @@
+﻿@page
+@model ParkingManagementWebApp.Pages.Pricings.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Pricing</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Pricing.DurationType)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Pricing.DurationType)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Pricing.Value)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Pricing.Value)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Pricing.VehicleType)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Pricing.VehicleType)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Pricing.PricingId">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

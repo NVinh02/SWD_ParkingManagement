@@ -1,0 +1,42 @@
+﻿@page
+@model ParkingManagementWebApp.Pages.Vehicles.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Vehicle</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Vehicle.VehicleId" class="control-label"></label>
+                <input asp-for="Vehicle.VehicleId" class="form-control" />
+                <span asp-validation-for="Vehicle.VehicleId" class="text-danger"></span>
+                <p class="text-danger">@Model.NumberPlateError</p>
+            </div>
+            <div class="form-group">
+                <input type="hidden" asp-for="Vehicle.Ccid" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Vehicle.Type" class="control-label"></label>
+                <select asp-for="Vehicle.Type" class ="form-control" asp-items="ViewBag.Type"></select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

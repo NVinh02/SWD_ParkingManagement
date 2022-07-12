@@ -1,0 +1,105 @@
+C:\Project\NET\Advanced\Group\Iteration04\ParkingManagement\DataAccess\bin\Debug\net5.0\DataAccess.deps.json
+C:\Project\NET\Advanced\Group\Iteration04\ParkingManagement\DataAccess\bin\Debug\net5.0\DataAccess.dll
+C:\Project\NET\Advanced\Group\Iteration04\ParkingManagement\DataAccess\bin\Debug\net5.0\ref\DataAccess.dll
+C:\Project\NET\Advanced\Group\Iteration04\ParkingManagement\DataAccess\bin\Debug\net5.0\DataAccess.pdb
+C:\Project\NET\Advanced\Group\Iteration04\ParkingManagement\DataAccess\bin\Debug\net5.0\BusinessObject.dll
+C:\Project\NET\Advanced\Group\Iteration04\ParkingManagement\DataAccess\bin\Debug\net5.0\BusinessObject.pdb
+C:\Project\NET\Advanced\Group\Iteration04\ParkingManagement\DataAccess\obj\Debug\net5.0\DataAccess.csproj.AssemblyReference.cache
+C:\Project\NET\Advanced\Group\Iteration04\ParkingManagement\DataAccess\obj\Debug\net5.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Project\NET\Advanced\Group\Iteration04\ParkingManagement\DataAccess\obj\Debug\net5.0\DataAccess.AssemblyInfoInputs.cache
+C:\Project\NET\Advanced\Group\Iteration04\ParkingManagement\DataAccess\obj\Debug\net5.0\DataAccess.AssemblyInfo.cs
+C:\Project\NET\Advanced\Group\Iteration04\ParkingManagement\DataAccess\obj\Debug\net5.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Project\NET\Advanced\Group\Iteration04\ParkingManagement\DataAccess\obj\Debug\net5.0\DataAccess.csproj.CopyComplete
+C:\Project\NET\Advanced\Group\Iteration04\ParkingManagement\DataAccess\obj\Debug\net5.0\DataAccess.dll
+C:\Project\NET\Advanced\Group\Iteration04\ParkingManagement\DataAccess\obj\Debug\net5.0\ref\DataAccess.dll
+C:\Project\NET\Advanced\Group\Iteration04\ParkingManagement\DataAccess\obj\Debug\net5.0\DataAccess.pdb
+C:\Users\dell\Desktop\NET_Prj\ParkingManagement\DataAccess\bin\Debug\net5.0\DataAccess.deps.json
+C:\Users\dell\Desktop\NET_Prj\ParkingManagement\DataAccess\bin\Debug\net5.0\DataAccess.dll
+C:\Users\dell\Desktop\NET_Prj\ParkingManagement\DataAccess\bin\Debug\net5.0\ref\DataAccess.dll
+C:\Users\dell\Desktop\NET_Prj\ParkingManagement\DataAccess\bin\Debug\net5.0\DataAccess.pdb
+C:\Users\dell\Desktop\NET_Prj\ParkingManagement\DataAccess\bin\Debug\net5.0\BusinessObject.dll
+C:\Users\dell\Desktop\NET_Prj\ParkingManagement\DataAccess\bin\Debug\net5.0\BusinessObject.pdb
+C:\Users\dell\Desktop\NET_Prj\ParkingManagement\DataAccess\obj\Debug\net5.0\DataAccess.csprojAssemblyReference.cache
+C:\Users\dell\Desktop\NET_Prj\ParkingManagement\DataAccess\obj\Debug\net5.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dell\Desktop\NET_Prj\ParkingManagement\DataAccess\obj\Debug\net5.0\DataAccess.AssemblyInfoInputs.cache
+C:\Users\dell\Desktop\NET_Prj\ParkingManagement\DataAccess\obj\Debug\net5.0\DataAccess.AssemblyInfo.cs
+C:\Users\dell\Desktop\NET_Prj\ParkingManagement\DataAccess\obj\Debug\net5.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\dell\Desktop\NET_Prj\ParkingManagement\DataAccess\obj\Debug\net5.0\DataAccess.csproj.CopyComplete
+C:\Users\dell\Desktop\NET_Prj\ParkingManagement\DataAccess\obj\Debug\net5.0\DataAccess.dll
+C:\Users\dell\Desktop\NET_Prj\ParkingManagement\DataAccess\obj\Debug\net5.0\ref\DataAccess.dll
+C:\Users\dell\Desktop\NET_Prj\ParkingManagement\DataAccess\obj\Debug\net5.0\DataAccess.pdb
+C:\Project\NET\Advanced\Group\Iteration06\ParkingManagement\DataAccess\bin\Debug\net5.0\DataAccess.deps.json
+C:\Project\NET\Advanced\Group\Iteration06\ParkingManagement\DataAccess\bin\Debug\net5.0\DataAccess.dll
+C:\Project\NET\Advanced\Group\Iteration06\ParkingManagement\DataAccess\bin\Debug\net5.0\ref\DataAccess.dll
+C:\Project\NET\Advanced\Group\Iteration06\ParkingManagement\DataAccess\bin\Debug\net5.0\DataAccess.pdb
+C:\Project\NET\Advanced\Group\Iteration06\ParkingManagement\DataAccess\bin\Debug\net5.0\BusinessObject.dll
+C:\Project\NET\Advanced\Group\Iteration06\ParkingManagement\DataAccess\bin\Debug\net5.0\BusinessObject.pdb
+C:\Project\NET\Advanced\Group\Iteration06\ParkingManagement\DataAccess\obj\Debug\net5.0\DataAccess.csproj.AssemblyReference.cache
+C:\Project\NET\Advanced\Group\Iteration06\ParkingManagement\DataAccess\obj\Debug\net5.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Project\NET\Advanced\Group\Iteration06\ParkingManagement\DataAccess\obj\Debug\net5.0\DataAccess.AssemblyInfoInputs.cache
+C:\Project\NET\Advanced\Group\Iteration06\ParkingManagement\DataAccess\obj\Debug\net5.0\DataAccess.AssemblyInfo.cs
+C:\Project\NET\Advanced\Group\Iteration06\ParkingManagement\DataAccess\obj\Debug\net5.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Project\NET\Advanced\Group\Iteration06\ParkingManagement\DataAccess\obj\Debug\net5.0\DataAccess.csproj.CopyComplete
+C:\Project\NET\Advanced\Group\Iteration06\ParkingManagement\DataAccess\obj\Debug\net5.0\DataAccess.dll
+C:\Project\NET\Advanced\Group\Iteration06\ParkingManagement\DataAccess\obj\Debug\net5.0\ref\DataAccess.dll
+C:\Project\NET\Advanced\Group\Iteration06\ParkingManagement\DataAccess\obj\Debug\net5.0\DataAccess.pdb
+C:\Users\dell\Desktop\Ite7\ParkingManagement\DataAccess\bin\Debug\net5.0\DataAccess.deps.json
+C:\Users\dell\Desktop\Ite7\ParkingManagement\DataAccess\bin\Debug\net5.0\DataAccess.dll
+C:\Users\dell\Desktop\Ite7\ParkingManagement\DataAccess\bin\Debug\net5.0\ref\DataAccess.dll
+C:\Users\dell\Desktop\Ite7\ParkingManagement\DataAccess\bin\Debug\net5.0\DataAccess.pdb
+C:\Users\dell\Desktop\Ite7\ParkingManagement\DataAccess\bin\Debug\net5.0\BusinessObject.dll
+C:\Users\dell\Desktop\Ite7\ParkingManagement\DataAccess\bin\Debug\net5.0\BusinessObject.pdb
+C:\Users\dell\Desktop\Ite7\ParkingManagement\DataAccess\obj\Debug\net5.0\DataAccess.csprojAssemblyReference.cache
+C:\Users\dell\Desktop\Ite7\ParkingManagement\DataAccess\obj\Debug\net5.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dell\Desktop\Ite7\ParkingManagement\DataAccess\obj\Debug\net5.0\DataAccess.AssemblyInfoInputs.cache
+C:\Users\dell\Desktop\Ite7\ParkingManagement\DataAccess\obj\Debug\net5.0\DataAccess.AssemblyInfo.cs
+C:\Users\dell\Desktop\Ite7\ParkingManagement\DataAccess\obj\Debug\net5.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\dell\Desktop\Ite7\ParkingManagement\DataAccess\obj\Debug\net5.0\DataAccess.csproj.CopyComplete
+C:\Users\dell\Desktop\Ite7\ParkingManagement\DataAccess\obj\Debug\net5.0\DataAccess.dll
+C:\Users\dell\Desktop\Ite7\ParkingManagement\DataAccess\obj\Debug\net5.0\ref\DataAccess.dll
+C:\Users\dell\Desktop\Ite7\ParkingManagement\DataAccess\obj\Debug\net5.0\DataAccess.pdb
+C:\Project\NET\Advanced\Group\Iteration07\ParkingManagement\DataAccess\bin\Debug\net5.0\DataAccess.deps.json
+C:\Project\NET\Advanced\Group\Iteration07\ParkingManagement\DataAccess\bin\Debug\net5.0\DataAccess.dll
+C:\Project\NET\Advanced\Group\Iteration07\ParkingManagement\DataAccess\bin\Debug\net5.0\ref\DataAccess.dll
+C:\Project\NET\Advanced\Group\Iteration07\ParkingManagement\DataAccess\bin\Debug\net5.0\DataAccess.pdb
+C:\Project\NET\Advanced\Group\Iteration07\ParkingManagement\DataAccess\bin\Debug\net5.0\BusinessObject.dll
+C:\Project\NET\Advanced\Group\Iteration07\ParkingManagement\DataAccess\bin\Debug\net5.0\BusinessObject.pdb
+C:\Project\NET\Advanced\Group\Iteration07\ParkingManagement\DataAccess\obj\Debug\net5.0\DataAccess.csproj.AssemblyReference.cache
+C:\Project\NET\Advanced\Group\Iteration07\ParkingManagement\DataAccess\obj\Debug\net5.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Project\NET\Advanced\Group\Iteration07\ParkingManagement\DataAccess\obj\Debug\net5.0\DataAccess.AssemblyInfoInputs.cache
+C:\Project\NET\Advanced\Group\Iteration07\ParkingManagement\DataAccess\obj\Debug\net5.0\DataAccess.AssemblyInfo.cs
+C:\Project\NET\Advanced\Group\Iteration07\ParkingManagement\DataAccess\obj\Debug\net5.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Project\NET\Advanced\Group\Iteration07\ParkingManagement\DataAccess\obj\Debug\net5.0\DataAccess.csproj.CopyComplete
+C:\Project\NET\Advanced\Group\Iteration07\ParkingManagement\DataAccess\obj\Debug\net5.0\DataAccess.dll
+C:\Project\NET\Advanced\Group\Iteration07\ParkingManagement\DataAccess\obj\Debug\net5.0\ref\DataAccess.dll
+C:\Project\NET\Advanced\Group\Iteration07\ParkingManagement\DataAccess\obj\Debug\net5.0\DataAccess.pdb
+C:\Users\dell\Desktop\New folder (5)\Iteration07\ParkingManagement\DataAccess\bin\Debug\net5.0\DataAccess.deps.json
+C:\Users\dell\Desktop\New folder (5)\Iteration07\ParkingManagement\DataAccess\bin\Debug\net5.0\DataAccess.dll
+C:\Users\dell\Desktop\New folder (5)\Iteration07\ParkingManagement\DataAccess\bin\Debug\net5.0\ref\DataAccess.dll
+C:\Users\dell\Desktop\New folder (5)\Iteration07\ParkingManagement\DataAccess\bin\Debug\net5.0\DataAccess.pdb
+C:\Users\dell\Desktop\New folder (5)\Iteration07\ParkingManagement\DataAccess\bin\Debug\net5.0\BusinessObject.dll
+C:\Users\dell\Desktop\New folder (5)\Iteration07\ParkingManagement\DataAccess\bin\Debug\net5.0\BusinessObject.pdb
+C:\Users\dell\Desktop\New folder (5)\Iteration07\ParkingManagement\DataAccess\obj\Debug\net5.0\DataAccess.csprojAssemblyReference.cache
+C:\Users\dell\Desktop\New folder (5)\Iteration07\ParkingManagement\DataAccess\obj\Debug\net5.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dell\Desktop\New folder (5)\Iteration07\ParkingManagement\DataAccess\obj\Debug\net5.0\DataAccess.AssemblyInfoInputs.cache
+C:\Users\dell\Desktop\New folder (5)\Iteration07\ParkingManagement\DataAccess\obj\Debug\net5.0\DataAccess.AssemblyInfo.cs
+C:\Users\dell\Desktop\New folder (5)\Iteration07\ParkingManagement\DataAccess\obj\Debug\net5.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\dell\Desktop\New folder (5)\Iteration07\ParkingManagement\DataAccess\obj\Debug\net5.0\DataAccess.csproj.CopyComplete
+C:\Users\dell\Desktop\New folder (5)\Iteration07\ParkingManagement\DataAccess\obj\Debug\net5.0\DataAccess.dll
+C:\Users\dell\Desktop\New folder (5)\Iteration07\ParkingManagement\DataAccess\obj\Debug\net5.0\ref\DataAccess.dll
+C:\Users\dell\Desktop\New folder (5)\Iteration07\ParkingManagement\DataAccess\obj\Debug\net5.0\DataAccess.pdb
+C:\Project\NET\Advanced\Group\Iteration07.5\ParkingManagement\DataAccess\bin\Debug\net5.0\DataAccess.deps.json
+C:\Project\NET\Advanced\Group\Iteration07.5\ParkingManagement\DataAccess\bin\Debug\net5.0\DataAccess.dll
+C:\Project\NET\Advanced\Group\Iteration07.5\ParkingManagement\DataAccess\bin\Debug\net5.0\ref\DataAccess.dll
+C:\Project\NET\Advanced\Group\Iteration07.5\ParkingManagement\DataAccess\bin\Debug\net5.0\DataAccess.pdb
+C:\Project\NET\Advanced\Group\Iteration07.5\ParkingManagement\DataAccess\bin\Debug\net5.0\BusinessObject.dll
+C:\Project\NET\Advanced\Group\Iteration07.5\ParkingManagement\DataAccess\bin\Debug\net5.0\BusinessObject.pdb
+C:\Project\NET\Advanced\Group\Iteration07.5\ParkingManagement\DataAccess\obj\Debug\net5.0\DataAccess.csproj.AssemblyReference.cache
+C:\Project\NET\Advanced\Group\Iteration07.5\ParkingManagement\DataAccess\obj\Debug\net5.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Project\NET\Advanced\Group\Iteration07.5\ParkingManagement\DataAccess\obj\Debug\net5.0\DataAccess.AssemblyInfoInputs.cache
+C:\Project\NET\Advanced\Group\Iteration07.5\ParkingManagement\DataAccess\obj\Debug\net5.0\DataAccess.AssemblyInfo.cs
+C:\Project\NET\Advanced\Group\Iteration07.5\ParkingManagement\DataAccess\obj\Debug\net5.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Project\NET\Advanced\Group\Iteration07.5\ParkingManagement\DataAccess\obj\Debug\net5.0\DataAccess.csproj.CopyComplete
+C:\Project\NET\Advanced\Group\Iteration07.5\ParkingManagement\DataAccess\obj\Debug\net5.0\DataAccess.dll
+C:\Project\NET\Advanced\Group\Iteration07.5\ParkingManagement\DataAccess\obj\Debug\net5.0\ref\DataAccess.dll
+C:\Project\NET\Advanced\Group\Iteration07.5\ParkingManagement\DataAccess\obj\Debug\net5.0\DataAccess.pdb

@@ -1,0 +1,189 @@
+﻿@page
+@model ParkingManagementWebApp.Pages.ParkingInfos.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<style>
+    #page:hover {
+        text-decoration: none;
+    }
+</style>
+<h1>Parking Infos</h1>
+@if (@Model.Status.Equals("All"))
+{
+    <button class="btn-primary" style="border-radius: 12px; padding: 5px 12px 5px 12px; border-color: blue;">
+        <a id="page" class="text-white" style="text-decoration:none;" asp-page="/ParkingInfos/Index" asp-route-id=0>All</a>
+    </button>
+    <button style="border-radius: 12px; padding: 5px 12px 5px 12px; border-color: blue;">
+        <a id="page" style="text-decoration: none;" asp-page="/ParkingInfos/Index" asp-route-id=1>Active</a>
+    </button>
+    <button style="border-radius: 12px; padding: 5px 12px 5px 12px; border-color: blue;">
+        <a id="page" style="text-decoration: none;" asp-page="/ParkingInfos/Index" asp-route-id=2>Booked</a>
+    </button>
+    <button style="border-radius: 12px; padding: 5px 12px 5px 12px; border-color: blue;">
+        <a id="page" style="text-decoration: none;" asp-page="/ParkingInfos/Index" asp-route-id=3>Finished</a>
+    </button>
+    <button style="border-radius: 12px; padding: 5px 12px 5px 12px; border-color: blue;">
+        <a id="page" style="text-decoration: none;" asp-page="/ParkingInfos/Index" asp-route-id=4>Cancelled</a>
+    </button>
+}
+@if (@Model.Status.Equals("Active"))
+{
+    <button style="border-radius: 12px; padding: 5px 12px 5px 12px; border-color: blue;">
+        <a id="page" style="text-decoration: none;" asp-page="/ParkingInfos/Index" asp-route-id=0>All</a>
+    </button>
+    <button class="btn-primary" style="border-radius: 12px; padding: 5px 12px 5px 12px; border-color: blue;">
+        <a id="page" class="text-white" style="text-decoration:none;" asp-page="/ParkingInfos/Index" asp-route-id=1>Active</a>
+    </button>
+    <button style="border-radius: 12px; padding: 5px 12px 5px 12px; border-color: blue;">
+        <a id="page" style="text-decoration: none;" asp-page="/ParkingInfos/Index" asp-route-id=2>Booked</a>
+    </button>
+    <button style="border-radius: 12px; padding: 5px 12px 5px 12px; border-color: blue;">
+        <a id="page" style="text-decoration: none;" asp-page="/ParkingInfos/Index" asp-route-id=3>Finished</a>
+    </button>
+    <button style="border-radius: 12px; padding: 5px 12px 5px 12px; border-color: blue;">
+        <a id="page" style="text-decoration: none;" asp-page="/ParkingInfos/Index" asp-route-id=4>Cancelled</a>
+    </button>
+}
+@if (@Model.Status.Equals("Booked"))
+{
+    <button style="border-radius: 12px; padding: 5px 12px 5px 12px; border-color: blue;">
+        <a id="page" style="text-decoration: none;" asp-page="/ParkingInfos/Index" asp-route-id=0>All</a>
+    </button>
+    <button style="border-radius: 12px; padding: 5px 12px 5px 12px; border-color: blue;">
+        <a id="page" style="text-decoration: none;" asp-page="/ParkingInfos/Index" asp-route-id=1>Active</a>
+    </button>
+    <button class="btn-primary" style="border-radius: 12px; padding: 5px 12px 5px 12px; border-color: blue;">
+        <a id="page" class="text-white" style="text-decoration:none;" asp-page="/ParkingInfos/Index" asp-route-id=2>Booked</a>
+    </button>
+    <button style="border-radius: 12px; padding: 5px 12px 5px 12px; border-color: blue;">
+        <a id="page" style="text-decoration: none;" asp-page="/ParkingInfos/Index" asp-route-id=3>Finished</a>
+    </button>
+    <button style="border-radius: 12px; padding: 5px 12px 5px 12px; border-color: blue;">
+        <a id="page" style="text-decoration: none;" asp-page="/ParkingInfos/Index" asp-route-id=4>Cancelled</a>
+    </button>
+}
+@if (@Model.Status.Equals("Finished"))
+{
+    <button style="border-radius: 12px; padding: 5px 12px 5px 12px; border-color: blue;">
+        <a id="page" style="text-decoration: none;" asp-page="/ParkingInfos/Index" asp-route-id=0>All</a>
+    </button>
+    <button style="border-radius: 12px; padding: 5px 12px 5px 12px; border-color: blue;">
+        <a id="page" style="text-decoration: none;" asp-page="/ParkingInfos/Index" asp-route-id=1>Active</a>
+    </button>
+    <button style="border-radius: 12px; padding: 5px 12px 5px 12px; border-color: blue;">
+        <a id="page" style="text-decoration: none;" asp-page="/ParkingInfos/Index" asp-route-id=2>Booked</a>
+    </button>
+    <button class="btn-primary" style="border-radius: 12px; padding: 5px 12px 5px 12px; border-color: blue;">
+        <a id="page" class="text-white" style="text-decoration:none;" asp-page="/ParkingInfos/Index" asp-route-id=3>Finished</a>
+    </button>
+    <button style="border-radius: 12px; padding: 5px 12px 5px 12px; border-color: blue;">
+        <a id="page" style="text-decoration: none;" asp-page="/ParkingInfos/Index" asp-route-id=4>Cancelled</a>
+    </button>
+}
+@if (@Model.Status.Equals("Cancelled"))
+{
+    <button style="border-radius: 12px; padding: 5px 12px 5px 12px; border-color: blue;">
+        <a id="page" style="text-decoration: none;" asp-page="/ParkingInfos/Index" asp-route-id=0>All</a>
+    </button>
+    <button style="border-radius: 12px; padding: 5px 12px 5px 12px; border-color: blue;">
+        <a id="page" style="text-decoration: none;" asp-page="/ParkingInfos/Index" asp-route-id=1>Active</a>
+    </button>
+    <button style="border-radius: 12px; padding: 5px 12px 5px 12px; border-color: blue;">
+        <a id="page" style="text-decoration: none;" asp-page="/ParkingInfos/Index" asp-route-id=2>Booked</a>
+    </button>
+    <button style="border-radius: 12px; padding: 5px 12px 5px 12px; border-color: blue;">
+        <a id="page" style="text-decoration: none;" asp-page="/ParkingInfos/Index" asp-route-id=3>Finished</a>
+    </button>
+    <button class="btn-primary" style="border-radius: 12px; padding: 5px 12px 5px 12px; border-color: blue;">
+        <a id="page" class="text-white" style="text-decoration:none;" asp-page="/ParkingInfos/Index" asp-route-id=4>Cancelled</a>
+    </button>
+}
+
+<br />
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ParkingInfo[0].CheckInTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ParkingInfo[0].CheckOutTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ParkingInfo[0].IsMonthly)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ParkingInfo[0].HaveVehicle)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ParkingInfo[0].Status)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ParkingInfo[0].TotalPrice)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ParkingInfo[0].Cc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ParkingInfo[0].Pricing)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ParkingInfo[0].Slot)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ParkingInfo[0].Vehicle)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.ParkingInfo)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CheckInTime)
+                </td>
+                <td>
+                    @if (item.CheckOutTime.CompareTo(item.CheckInTime) >= 0)
+                    {
+                        @Html.DisplayFor(modelItem => item.CheckOutTime)
+                    }
+                    else
+                    {
+                        <b>None</b>
+                    }
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IsMonthly)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.HaveVehicle)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Status)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TotalPrice)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Cc.Ccid)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Pricing.DurationType)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Slot.Position)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Vehicle.VehicleId)
+                </td>
+                <td>
+                    <a asp-page="./Details" asp-route-id="@item.ParkingInfoId">Details</a> 
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

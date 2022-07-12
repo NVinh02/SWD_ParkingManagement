@@ -1,0 +1,94 @@
+﻿@page
+@model ParkingManagementWebApp.Pages.ParkingInfos.ChangeSlotModel
+@{
+    ViewData["Title"] = "Change Slot";
+}
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript">
+    function selectedSlot(id, position, floor) {
+        var text = document.getElementById("chosenSlotText");
+        text.innerHTML = " Slot " + position + " on floor " + floor;
+
+        var value = document.getElementById("slotValue");
+        value.value = id;
+    };
+
+</script>
+
+<h1>Change Slot</h1>
+<div>
+    <div class="card" style="display:inline-block; text-align: center; vertical-align: middle; width: 50px; height: 50px; margin: 10px; background: green;"></div> Available to book
+    <div class="card" style="display: inline-block; text-align: center; vertical-align: middle; width: 50px; height: 50px; margin: 10px; background: yellow;"></div> Already booked
+    <div class="card" style="display: inline-block; text-align: center; vertical-align: middle; width: 50px; height: 50px; margin: 10px; background: red;"></div> Inactive
+</div>
+
+<div>
+    <div>
+        <div class="form-group">
+            <h4>You are choosing slot: <div id="chosenSlotText" style="display:inline-block;"></div></h4>
+        </div>
+    </div>
+
+    <form method="post">
+        <div class="form-group" id="ResourceSlot">
+            <input type="hidden" asp-for="ChosenSlot.ChosenSlotId" class="form-control" id="slotValue" value="0" />
+        </div>
+        <input type="hidden" asp-for="ParkingInfoId" class="form-control" value="@Model.ParkingInfo.ParkingInfoId" />
+        <div class="text-danger">@TempData["ErrorMessage"]</div>
+        <div class="form-group" style="display: inline-block">
+            <input id="btnSubmit" type="submit" value="Choose" class="btn btn-primary" />
+        </div>
+        <a asp-page="./Details" asp-route-id="@Model.ParkingInfo.ParkingInfoId" class="btn btn-primary" style="display: inline-block">Back to Details</a>
+    </form>
+</div>
+
+<div class="row" style="display: block;
+            position: relative;
+            width: 500px;
+            height: 200px;
+            z-index: 15;
+            top: 50%;
+            left: 50%;
+            margin: 80px 0 0 -150px;
+    ">
+    @for (int i = 0; i < Model.SlotForm.Count() / 5; i++)
+    {
+        @if (Model.SlotForm.Count() == 20 && i % 2 == 0)
+        {
+            <h4>Floor @(i/2 + 1)</h4>
+        }
+        else if (i % 2 == 0)
+        {
+            <h4>Floor 3</h4>
+        }
+        <div class="row">
+            <div class="card" style="text-align: center; vertical-align: middle; width: 50px; height: 50px; margin: 5px 10px 0px 10px;
+                @(Model.SlotForm[i * 5].IsActive?"background: yellow;":"background: red;") @((Model.SlotForm[i * 5].IsAvailable && Model.SlotForm[i * 5].IsActive)?"background: green;":"pointer-events: none;")"
+                 onclick="selectedSlot('@Model.SlotForm[i * 5].SlotId', '@Model.SlotForm[i * 5].Position', '@Model.SlotForm[i * 5].Floor')">
+                <b>@Html.DisplayFor(model => model.SlotForm[i * 5].Position)</b>
+            </div>
+            <div class="card" style="text-align: center; vertical-align: middle; width: 50px; height: 50px; margin: 5px 10px 0px 10px;
+                @(Model.SlotForm[i * 5 + 1].IsActive?"background: yellow;":"background: red;") @((Model.SlotForm[i * 5 + 1].IsAvailable && Model.SlotForm[i * 5 + 1].IsActive)?"background: green;":"pointer-events: none;")"
+                 onclick="selectedSlot('@Model.SlotForm[i * 5 + 1].SlotId', '@Model.SlotForm[i * 5 + 1].Position', '@Model.SlotForm[i * 5 + 1].Floor')">
+                <b>@Html.DisplayFor(model => model.SlotForm[i * 5 + 1].Position)</b>
+            </div>
+            <div class="card" style="text-align: center; vertical-align: middle; width: 50px; height: 50px; margin: 5px 10px 0px 10px;
+                @(Model.SlotForm[i * 5 + 2].IsActive?"background: yellow;":"background: red;") @((Model.SlotForm[i * 5 + 2].IsAvailable && Model.SlotForm[i * 5 + 2].IsActive)?"background: green;":"pointer-events: none;")"
+                 onclick="selectedSlot('@Model.SlotForm[i * 5 + 2].SlotId', '@Model.SlotForm[i * 5 + 2].Position', '@Model.SlotForm[i * 5 + 2].Floor')">
+                <b>@Html.DisplayFor(model => model.SlotForm[i * 5 + 2].Position)</b>
+            </div>
+            <div class="card" style="text-align: center; vertical-align: middle; width: 50px; height: 50px; margin: 5px 10px 0px 10px;
+                @(Model.SlotForm[i * 5 + 3].IsActive?"background: yellow;":"background: red;") @((Model.SlotForm[i * 5 + 3].IsAvailable && Model.SlotForm[i * 5 + 3].IsActive)?"background: green;":"pointer-events: none;")"
+                 onclick="selectedSlot('@Model.SlotForm[i * 5 + 3].SlotId', '@Model.SlotForm[i * 5 + 3].Position', '@Model.SlotForm[i * 5 + 3].Floor')">
+                <b>@Html.DisplayFor(model => model.SlotForm[i * 5 + 3].Position)</b>
+            </div>
+            <div class="card" style="text-align: center; vertical-align: middle; width: 50px; height: 50px; margin: 5px 10px 0px 10px;
+                @(Model.SlotForm[i * 5 + 4].IsActive?"background: yellow;":"background: red;") @((Model.SlotForm[i * 5 + 4].IsAvailable && Model.SlotForm[i * 5 + 4].IsActive)?"background: green;":"pointer-events: none;")"
+                 onclick="selectedSlot('@Model.SlotForm[i * 5 + 4].SlotId', '@Model.SlotForm[i * 5 + 4].Position', '@Model.SlotForm[i * 5 + 4].Floor')">
+                <b>@Html.DisplayFor(model => model.SlotForm[i * 5 + 4].Position)</b>
+            </div>
+        </div>
+        <br />
+    }
+</div>

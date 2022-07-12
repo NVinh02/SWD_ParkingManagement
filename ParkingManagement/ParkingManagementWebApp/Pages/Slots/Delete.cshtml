@@ -1,0 +1,151 @@
+﻿@page
+@model ParkingManagementWebApp.Pages.Slots.DeleteModel
+
+@{
+    ViewData["Title"] = "Status";
+}
+
+
+
+@if (Model.IsActive == true)
+{
+    <h1>Disable</h1>
+    <h3>Are you sure you want to disable this?</h3>
+}
+@if (Model.IsActive == false)
+{
+    <h1>Enable</h1>
+    <h3>Are you sure you want to enable this?</h3>
+}
+
+<div>
+    <h4>Slot</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Slot.Floor)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Slot.Floor)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Slot.Position)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Slot.Position)
+        </dd>
+        <dt class="col-sm-2" hidden>
+            @Html.DisplayNameFor(model => model.Slot.IsOccupied)
+        </dt>
+        <dd class="col-sm-10" hidden>
+            @Html.DisplayFor(model => model.Slot.IsOccupied)
+        </dd>
+        <dt class="col-sm-2" hidden>
+            @Html.DisplayNameFor(model => model.Slot.IsBook)
+        </dt>
+        <dd class="col-sm-10" hidden>
+            @Html.DisplayFor(model => model.Slot.IsBook)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Slot.IsActive)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Slot.IsActive)
+        </dd>
+    </dl>
+
+    <form method="post">
+        <input type="hidden" asp-for="Slot.SlotId" />
+        <input type="submit" value="Confirm" class="btn btn-danger" /> |
+        <a asp-page="./Index" asp-route-id=@Model.Floor>Back to List</a>
+    </form>
+</div>
+@if (Model.ParkingInfo != null)
+{
+    <h4 class="text-danger">Cannot disable this Slot because it is still involved in ongoing Parking Info!</h4>
+    <h4 class="text-danger">Please cancel these Parking Infos or change their Slots before trying again!</h4>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.ParkingInfo[0].CheckInTime)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ParkingInfo[0].CheckOutTime)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ParkingInfo[0].IsMonthly)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ParkingInfo[0].HaveVehicle)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ParkingInfo[0].Status)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ParkingInfo[0].TotalPrice)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ParkingInfo[0].Cc)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ParkingInfo[0].Pricing)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ParkingInfo[0].Slot)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ParkingInfo[0].Vehicle)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.ParkingInfo)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CheckInTime)
+                    </td>
+                    <td>
+                        @if (item.CheckOutTime.CompareTo(item.CheckInTime) >= 0)
+                        {
+                            @Html.DisplayFor(modelItem => item.CheckOutTime)
+                        }
+                        else
+                        {
+                            <b>None</b>
+                        }
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.IsMonthly)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.HaveVehicle)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Status)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TotalPrice)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Cc.Ccid)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Pricing.DurationType)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Slot.Position)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Vehicle.VehicleId)
+                    </td>
+                    <td>
+                        <a asp-page="/ParkingInfos/Details" asp-route-id="@item.ParkingInfoId">Details</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AA7BR6losVlmDwPYUkgxko7GeE/YK5v8kSM2bMOSbIxJrIfHYGIv5pBgaICm12KKCuh5DxS7DVTznhlb62aFvA==",
+  "dgSpecHash": "VcdFbtcSmvdv2JnNJ28Eg0oVjMm21Euz6zp2XLKS7+nVZrm98FmM8UGnXqjRW1d4U1q1YyxYik1lkwMASDy04g==",
   "success": true,
-  "projectFilePath": "C:\\Project\\NET\\Advanced\\Group\\Iteration07.5\\ParkingManagement\\DataAccess\\DataAccess.csproj",
+  "projectFilePath": "C:\\Project\\NET\\Advanced\\Group\\Final\\ParkingManagement\\DataAccess\\DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Darksens\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Darksens\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",

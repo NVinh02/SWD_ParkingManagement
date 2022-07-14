@@ -5802,11 +5802,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Project\\NET\\Advanced\\Group\\Iteration07.5\\ParkingManagement\\BusinessObject\\BusinessObject.csproj",
+      "projectUniqueName": "C:\\Project\\NET\\Advanced\\Group\\Final\\ParkingManagement\\BusinessObject\\BusinessObject.csproj",
       "projectName": "BusinessObject",
-      "projectPath": "C:\\Project\\NET\\Advanced\\Group\\Iteration07.5\\ParkingManagement\\BusinessObject\\BusinessObject.csproj",
+      "projectPath": "C:\\Project\\NET\\Advanced\\Group\\Final\\ParkingManagement\\BusinessObject\\BusinessObject.csproj",
       "packagesPath": "C:\\Users\\Darksens\\.nuget\\packages\\",
-      "outputPath": "C:\\Project\\NET\\Advanced\\Group\\Iteration07.5\\ParkingManagement\\BusinessObject\\obj\\",
+      "outputPath": "C:\\Project\\NET\\Advanced\\Group\\Final\\ParkingManagement\\BusinessObject\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Darksens\\AppData\\Roaming\\NuGet\\NuGet.Config",

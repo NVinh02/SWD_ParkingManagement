@@ -46,11 +46,15 @@
                 {
                     <a asp-page="./Delete" asp-route-id="@item.Ccid">Disabled</a>
                     <a class="text-black-50">|</a>
+                    <a asp-page="./Residency" asp-route-id="@item.Ccid">Change Resident Status</a>
+                    <a class="text-black-50">|</a>
                     <a asp-page="./Details" asp-route-id="@item.Ccid">Details</a>
                 }
                 @if (@item.Status == false)
                 {
                     <a asp-page="./Delete" asp-route-id="@item.Ccid">Active</a>
+                    <a class="text-black-50">|</a>
+                    <a asp-page="./Residency" asp-route-id="@item.Ccid">Change Resident Status</a>
                     <a class="text-black-50">|</a>
                     <a asp-page="./Details" asp-route-id="@item.Ccid">Details</a>
                 }

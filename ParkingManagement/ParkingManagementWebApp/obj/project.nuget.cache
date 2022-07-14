@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "i0sNYTXxtp9blPEIPi2jE7wkzoEoKdsanVHHwzKWawfa2Q5oegwRGo8sImhNSzPI9WbN8WJ9O0T8U9E+i2xzzg==",
+  "dgSpecHash": "OA7ylTGth0IZ4vVxkhYKecERoWX1zErgNDs+wwqKT5FNVJNDS6HV1OEEmn9p9hKdLNISgRlDGX9uBWpoCs4Ahg==",
   "success": true,
-  "projectFilePath": "C:\\Project\\NET\\Advanced\\Group\\Iteration07.5\\ParkingManagement\\ParkingManagementWebApp\\ParkingManagementWebApp.csproj",
+  "projectFilePath": "C:\\Project\\NET\\Advanced\\Group\\Final\\ParkingManagement\\ParkingManagementWebApp\\ParkingManagementWebApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Darksens\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Darksens\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",

@@ -7192,11 +7192,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Project\\NET\\Advanced\\Group\\Iteration07.5\\ParkingManagement\\ParkingManagementWebApp\\ParkingManagementWebApp.csproj",
+      "projectUniqueName": "C:\\Project\\NET\\Advanced\\Group\\Final\\ParkingManagement\\ParkingManagementWebApp\\ParkingManagementWebApp.csproj",
       "projectName": "ParkingManagementWebApp",
-      "projectPath": "C:\\Project\\NET\\Advanced\\Group\\Iteration07.5\\ParkingManagement\\ParkingManagementWebApp\\ParkingManagementWebApp.csproj",
+      "projectPath": "C:\\Project\\NET\\Advanced\\Group\\Final\\ParkingManagement\\ParkingManagementWebApp\\ParkingManagementWebApp.csproj",
       "packagesPath": "C:\\Users\\Darksens\\.nuget\\packages\\",
-      "outputPath": "C:\\Project\\NET\\Advanced\\Group\\Iteration07.5\\ParkingManagement\\ParkingManagementWebApp\\obj\\",
+      "outputPath": "C:\\Project\\NET\\Advanced\\Group\\Final\\ParkingManagement\\ParkingManagementWebApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Darksens\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -7213,11 +7213,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Project\\NET\\Advanced\\Group\\Iteration07.5\\ParkingManagement\\BusinessObject\\BusinessObject.csproj": {
-              "projectPath": "C:\\Project\\NET\\Advanced\\Group\\Iteration07.5\\ParkingManagement\\BusinessObject\\BusinessObject.csproj"
+            "C:\\Project\\NET\\Advanced\\Group\\Final\\ParkingManagement\\BusinessObject\\BusinessObject.csproj": {
+              "projectPath": "C:\\Project\\NET\\Advanced\\Group\\Final\\ParkingManagement\\BusinessObject\\BusinessObject.csproj"
             },
-            "C:\\Project\\NET\\Advanced\\Group\\Iteration07.5\\ParkingManagement\\DataAccess\\DataAccess.csproj": {
-              "projectPath": "C:\\Project\\NET\\Advanced\\Group\\Iteration07.5\\ParkingManagement\\DataAccess\\DataAccess.csproj"
+            "C:\\Project\\NET\\Advanced\\Group\\Final\\ParkingManagement\\DataAccess\\DataAccess.csproj": {
+              "projectPath": "C:\\Project\\NET\\Advanced\\Group\\Final\\ParkingManagement\\DataAccess\\DataAccess.csproj"
             }
           }
         }

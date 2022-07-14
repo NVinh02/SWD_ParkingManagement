@@ -5724,11 +5724,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Project\\NET\\Advanced\\Group\\Iteration07.5\\ParkingManagement\\DataAccess\\DataAccess.csproj",
+      "projectUniqueName": "C:\\Project\\NET\\Advanced\\Group\\Final\\ParkingManagement\\DataAccess\\DataAccess.csproj",
       "projectName": "DataAccess",
-      "projectPath": "C:\\Project\\NET\\Advanced\\Group\\Iteration07.5\\ParkingManagement\\DataAccess\\DataAccess.csproj",
+      "projectPath": "C:\\Project\\NET\\Advanced\\Group\\Final\\ParkingManagement\\DataAccess\\DataAccess.csproj",
       "packagesPath": "C:\\Users\\Darksens\\.nuget\\packages\\",
-      "outputPath": "C:\\Project\\NET\\Advanced\\Group\\Iteration07.5\\ParkingManagement\\DataAccess\\obj\\",
+      "outputPath": "C:\\Project\\NET\\Advanced\\Group\\Final\\ParkingManagement\\DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Darksens\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5745,8 +5745,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Project\\NET\\Advanced\\Group\\Iteration07.5\\ParkingManagement\\BusinessObject\\BusinessObject.csproj": {
-              "projectPath": "C:\\Project\\NET\\Advanced\\Group\\Iteration07.5\\ParkingManagement\\BusinessObject\\BusinessObject.csproj"
+            "C:\\Project\\NET\\Advanced\\Group\\Final\\ParkingManagement\\BusinessObject\\BusinessObject.csproj": {
+              "projectPath": "C:\\Project\\NET\\Advanced\\Group\\Final\\ParkingManagement\\BusinessObject\\BusinessObject.csproj"
             }
           }
         }

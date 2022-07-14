@@ -34,8 +34,6 @@
 <div>
     @if (@Model.IsStaff == false)
     {
-        <a asp-page="./Edit" asp-route-id="@Model.Vehicle.VehicleId">Edit</a>
-        <a class="text-black-50">|</a>
         <a asp-page="./Index">Back to List</a>
     }
     @if (@Model.IsStaff == true)

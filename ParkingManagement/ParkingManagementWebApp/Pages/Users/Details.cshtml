@@ -34,13 +34,17 @@
 <div>
     @if (Model.Status == true)
     {
-        <a asp-page="./Delete" asp-route-id="@Model.User.Ccid"></a>
+        <a asp-page="./Delete" asp-route-id="@Model.User.Ccid">Disable</a>
+        <a class="text-black-50">|</a>
+        <a asp-page="./Residency" asp-route-id="@Model.User.Ccid">Change Resident Status</a>
         <a class="text-black-50">|</a>
         <a asp-page="./Index">Back to List</a>
-    }    
+    }
     @if (Model.Status == false)
     {
-        <a asp-page="./Delete" asp-route-id="@Model.User.Ccid"></a>
+        <a asp-page="./Delete" asp-route-id="@Model.User.Ccid">Enable</a>
+        <a class="text-black-50">|</a>
+        <a asp-page="./Residency" asp-route-id="@Model.User.Ccid">Change Resident Status</a>
         <a class="text-black-50">|</a>
         <a asp-page="./Index">Back to List</a>
     }
